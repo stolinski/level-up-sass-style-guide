@@ -25,7 +25,7 @@ _base.scss imports all partials as well as Compass so that _base.scss is the onl
 	@import 'mixins';
 
 #### Table Of Contents
-The Table Of Contents may be proceeded with a ascii art depending on the appropriateness of the situation. For personal projects and non-professional clients.
+The Table of Contents may be proceeded with a ascii art depending on the appropriateness of the situation. For personal projects and non-professional clients.
 
     /*------------------------------------*\
         $TABLE OF CONTENTS
@@ -93,6 +93,31 @@ Base is the first item, the descriptor text gives a brief description of what yo
    
 ######    Section Comments
 
+    /*--$MAIN CONTENT--*/
+Sectiom comments are much smaller and simple. They require 2 break preceeding and 1 following.
+
+      }
+    }
+
+
+    /*--$MAIN CONTENT--*/
+
+    .panel {
+      position: relative;
+      padding:50px 20px 60px;
+
+###### Sub-section Comments
+
+    /* $about */
+
+Sub-section comments are similar to section comments however they don't include '-', are lowercase, and require 1 break preceeding and none following.
+
+    /*--$SECTIONS--*/
+
+    /* $about */
+    .about {
+    	background: white;
+    }
 
 
 
