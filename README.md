@@ -1,10 +1,10 @@
 # Level Up Sass Style Guide
 *By Scott Tolinski*
 
-#### Philosophy
+### Philosophy
 The Level Up Style Guide exists to aid in clean, readable, and organized sass/css. This is not intended to be groudbreaking, just a collection of organization techniques borrowed from many other style guides. These guides can be found at the bottom of this readme.
 
-#### File Structure
+### File Structure
 Files are organized into two folders
 
 - sass/
@@ -24,7 +24,7 @@ _base.scss imports all partials as well as Compass so that _base.scss is the onl
 	@import 'vars';
 	@import 'mixins';
 
-#### Table Of Contents
+### Table Of Contents
 The Table of Contents may be proceeded with a ascii art depending on the appropriateness of the situation. For personal projects and non-professional clients.
 
     /*------------------------------------*\
@@ -61,8 +61,8 @@ Base is the first item, the descriptor text gives a brief description of what yo
      * Helper Classes.........Things like clearfix, image replace
      */
    
-#### Comments
-###### Main Section Comments
+### Comments
+##### Main Section Comments
     /*------------------------------------*\
         $TABLE OF CONTENTS
     \*------------------------------------*/
@@ -91,12 +91,11 @@ Base is the first item, the descriptor text gives a brief description of what yo
  
     
    
-######    Section Comments
+#####    Section Comments
 
     /*--$MAIN CONTENT--*/
 Sectiom comments are much smaller and simple. They require 2 break preceeding and 1 following.
 
-      }
     }
 
 
@@ -106,7 +105,7 @@ Sectiom comments are much smaller and simple. They require 2 break preceeding an
       position: relative;
       padding:50px 20px 60px;
 
-###### Sub-section Comments
+##### Sub-section Comments
 
     /* $about */
 
@@ -119,9 +118,14 @@ Sub-section comments are similar to section comments however they don't include 
     	background: white;
     }
 
+### Variables
+More to come
+
+### Mixins
+More to come
 
 
-##### Borrowed Content
+### Borrowed Content
 [Harry Robert's CSS Style](http://csswizardry.com/2012/04/my-html-css-coding-style/)
 
 * Table of Contents
