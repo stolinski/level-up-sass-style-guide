@@ -1,0 +1,27 @@
+/*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+
+@mixin transition($sec: 0.2s) {
+-webkit-transition: all $sec ease-out;
+   -moz-transition: all $sec ease-out;
+    -ms-transition: all $sec ease-out;
+     -o-transition: all $sec ease-out;
+        transition: all $sec ease-out;
+}
+
+
+@mixin navText($size: 14px) {
+    color: white;
+    font: 800 $size "proxima-nova";
+    text-transform: uppercase;
+}
+
+@mixin projTitle($size:20px, $color: $teal) {
+    color: $color;
+    font: 800 $size "proxima-nova";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: left;
+}
+
