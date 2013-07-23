@@ -2,26 +2,36 @@
     $MIXINS
 \*------------------------------------*/
 
+/* See _mixins.scss */
+
+/* Scott's Dope Mixins v0.3 */
+
+/* A less configurable but more areodynamic transition mixin */
 @mixin transition($sec: 0.2s) {
--webkit-transition: all $sec ease-out;
-   -moz-transition: all $sec ease-out;
-    -ms-transition: all $sec ease-out;
-     -o-transition: all $sec ease-out;
-        transition: all $sec ease-out;
+  -webkit-transition: all $sec ease-out;
+     -moz-transition: all $sec ease-out;
+      -ms-transition: all $sec ease-out;
+       -o-transition: all $sec ease-out;
+          transition: all $sec ease-out;
 }
 
 
-@mixin navText($size: 14px) {
-    color: white;
-    font: 800 $size "proxima-nova";
-    text-transform: uppercase;
-}
-
-@mixin projTitle($size:20px, $color: $teal) {
+/* A re-useable font mixin for whatever fonts you are using, allows for an optional color argument */
+@mixin serif($size, $color:"") {
     color: $color;
-    font: 800 $size "proxima-nova";
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-align: left;
+    font: italic normal $size 'Droid Serif';
 }
 
+
+/* REQUIRES COMPASS */
+
+/* Faster gradients, if a stop is not specified a -20 of the start
+is assigned for you this may be adjustable in the near future */
+@mixin gradient($start, $stop:false) {
+    @if $stop {
+        @include background-image(linear-gradient($start, $stop));
+    } @else {
+        @include background-image(linear-gradient($start, $start - 20));
+    }
+
+}

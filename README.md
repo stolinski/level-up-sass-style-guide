@@ -119,10 +119,29 @@ Sub-section comments are similar to section comments however they don't include 
     }
 
 ### Variables
-More to come
+
+Variable are defined in the _vars.scss file and included into the _base.scss. Variables should be brought in after compass, after normalize, but before mixins. This is so that mixins hav access to variable names.
+
+Variables are defined with a main section comment with a sub-section comment letting users who are viewing the complied css file where the variables are located. Variable titles should describe the color's roll on the site rather than the appearance of the color itself. This doesn't mean however that the variable names cannot be color names. For instance a tan color used on nothing in particular can be defined  as $tan, however primary text and link colors should be defined by their function name ($link, $text). Also each variable should have an explanation for quick glance as to what the color looks like.
+
+    /*------------------------------------*\
+        $VARIABLES
+    \*------------------------------------*/
+    
+    /* See _vars.scss */
+    $link:#e16e2b; // Orange Link Color
+    $linko:#f4810f; // Link hover
+    $text:#3a363d; // Standard Text Color
+    $bgs:#77c7c6; // Teal color used for backgrounds
+    $tan:#dbd8cf; // Tan color
+    $grey:#3d393a; // Standard dark grey
+    $pink:#c9005d;
+
+
 
 ### Mixins
-More to come
+
+Mixins are defined in _mixins.scss and are loaded in after _vars.scss. Variables should have default values to allow for quick use of mixins without passing arguments. Mixins are started with [Scott's Dope Mixins](https://github.com/stolinski/Scotts-Dope-Mixins).
 
 
 ### Borrowed Content
