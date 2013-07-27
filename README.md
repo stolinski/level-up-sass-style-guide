@@ -118,6 +118,23 @@ Sub-section comments are similar to section comments however they don't include 
     	background: white;
     }
 
+
+##### Description Comments
+
+Description comments are used to simply describe what a particular class or block of css is accomplishing. These comments are written in more of a sentence form and don't require to be preceeded with a $. These comments require 1 space above with none below and are defined as follows:
+
+    // Logos for topics
+    .block-menu-logos {
+        margin:80px 0 30px;
+        h2 {
+            text-align: center;
+            margin:10px 0 40px;
+        }
+        .menu {
+            text-align: center;
+        }
+    }
+
 ### Variables
 
 Variable are defined in the _vars.scss file and included into the _base.scss. Variables should be brought in after compass, after normalize, but before mixins. This is so that mixins hav access to variable names.
