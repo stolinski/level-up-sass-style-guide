@@ -109,7 +109,7 @@ Sectiom comments are much smaller and simple. They require 2 break preceeding an
 
     /* $about */
 
-Sub-section comments are similar to section comments however they don't include '-', are lowercase, and require 1 break preceeding and none following.
+Sub-section comments are similar to section comments however they don't include '--', are lowercase, and require 1 break preceeding and none following.
 
     /*--$SECTIONS--*/
 
@@ -122,8 +122,7 @@ Sub-section comments are similar to section comments however they don't include 
 
 Variable are defined in the _vars.scss file and included into the _base.scss. Variables should be brought in after compass, after normalize, but before mixins. This is so that mixins hav access to variable names.
 
-Variables are defined with a main section comment with a sub-section comment letting users who are viewing the complied css file where the variables are located. Variable titles should describe the color's roll on the site rather than the appearance of the color itself. This doesn't mean however that the variable names cannot be color names. For instance a tan color used on nothing in particular can be defined  as $tan, however primary text and link colors should be defined by their function name ($link, $text). Also each variable should have an explanation for quick glance as to what the color looks like.
-
+Variables are defined with a main section comment with a sub-section comment letting users who are viewing the complied css file where the variables are located. Variable titles should describe the color's roll on the site rather than the appearance of the color itself. This doesn't mean however that the variable names cannot be color names. For instance a tan color used on nothing in particular can be defined  as $tan, however primary text and link colors should be defined by their function name ($link, $text). Also each variable should have an explanation for quick glance as to what the color looks like. Sometimes it's fun to give your variables nicknames.
     /*------------------------------------*\
         $VARIABLES
     \*------------------------------------*/
@@ -133,7 +132,7 @@ Variables are defined with a main section comment with a sub-section comment let
     $linko:#f4810f; // Link hover
     $text:#3a363d; // Standard Text Color
     $bgs:#77c7c6; // Teal color used for backgrounds
-    $tan:#dbd8cf; // Tan color
+    $tan:#dbd8cf; // Tan color aka "Dirt M'Girt"
     $grey:#3d393a; // Standard dark grey
     $pink:#c9005d;
 
