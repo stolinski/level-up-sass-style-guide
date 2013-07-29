@@ -140,6 +140,7 @@ Description comments are used to simply describe what a particular class or bloc
 Variable are defined in the _vars.scss file and included into the _base.scss. Variables should be brought in after compass, after normalize, but before mixins. This is so that mixins hav access to variable names.
 
 Variables are defined with a main section comment with a sub-section comment letting users who are viewing the complied css file where the variables are located. Variable titles should describe the color's roll on the site rather than the appearance of the color itself. This doesn't mean however that the variable names cannot be color names. For instance a tan color used on nothing in particular can be defined  as $tan, however primary text and link colors should be defined by their function name ($link, $text). Also each variable should have an explanation for quick glance as to what the color looks like. Sometimes it's fun to give your variables nicknames.
+    
     /*------------------------------------*\
         $VARIABLES
     \*------------------------------------*/
